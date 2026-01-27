@@ -57,7 +57,7 @@ function Projects() {
                         ]}
                         description={[
                             "A meal prep planner and nutrition tracker built during a 24-hour hackathon that allows users to search recipes by cuisine, ingredient, and food category",
-                            "Select your favourite recipes and Sizzlin' Spoons will automatically organize them in a weekly meal plan with a daily nutritional breakdown",
+                            "Select your favourite recipes and Sizzlin' Spoons automatically organizes them in a weekly meal plan with daily nutritional breakdowns",
                             "Tech stack: Python, Flask, HTML/CSS"
 
                         ]}
@@ -87,8 +87,8 @@ function Projects() {
                             ]}
                             description={[
                                 "A tool for linguistics field research to store and access data on languages, dialects, and speakers encountered in the field",
-                                "Backed by a relational database, users can insert, update, and delete languages and speakers",
-                                "View generated insights like Ancient Languages and Countries with the highest number of speakers",
+                                "Backed by a relational database, users can insert, update, and delete data on languages and speakers",
+                                "View generated insights like Ancient Languages and Countries With the Highest Number of Speakers for each language",
                                 "Tech stack: JavaScript, MySQL, Oracle, HTML/CSS"
                             ]}
                             icons={[

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-ltgreen: #DCE4B8;
+    --color-dkgreen: #515739;
+    --color-ltpink: #FFD9F2;
+    --color-burgundy: #570228;
+    --color-offwhite: #FBFDF7;
+    --font-fraunces: "Fraunces", serif;
+    --font-epilogue: "Epilogue", sans-serif
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.marquee {
+    animation: marquee 25s linear infinite;
+    will-change: transform;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
