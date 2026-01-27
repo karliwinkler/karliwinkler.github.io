@@ -26,7 +26,7 @@ function Hero() {
 
                         <div className="h-64 w-64 rounded-full overflow-hidden">
                             <img
-                                src="/images/IMG_0070.JPG"
+                                src="images/IMG_0070.JPG"
                                 alt="Profile"
                                 className="relative h-full w-full object-cover"
                             />

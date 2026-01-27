@@ -8,7 +8,7 @@
     --color-burgundy: #570228;
     --color-offwhite: #FBFDF7;
     --font-fraunces: "Fraunces", serif;
-    --font-epilogue: "Epilogue", sans-serif
+    --font-epilogue: "Epilogue", sans-serif;
 }
 
 @keyframes marquee {

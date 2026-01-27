@@ -40,7 +40,7 @@ function About() {
                             <div className="-rotate-6 z-20 translate-y-25">
                                 <div className="bg-white p-2 shadow-lg">
                                     <img
-                                        src="/images/ski-2.JPG"
+                                        src="images/ski-2.JPG"
                                         alt="About photo 1"
                                         className="block max-w-[210px] h-auto"
                                     />
@@ -51,7 +51,7 @@ function About() {
                             <div className="relative z-10 -mx-20">
                                 <div className="bg-white p-2 shadow-xl">
                                     <img
-                                        src="/images/hiking-2.jpeg"
+                                        src="images/hiking-2.jpeg"
                                         alt="About photo 2"
                                         className="block max-w-[280px] h-auto"
                                     />
@@ -62,7 +62,7 @@ function About() {
                             <div className="rotate-5 ">
                                 <div className="bg-white p-2 shadow-lg">
                                     <img
-                                        src="/images/cannonbeach-2.jpeg"
+                                        src="images/cannonbeach-2.jpeg"
                                         alt="About photo 3"
                                         className="block max-w-[220px] h-auto"
                                     />
