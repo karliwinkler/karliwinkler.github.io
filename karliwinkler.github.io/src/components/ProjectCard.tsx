@@ -21,9 +21,9 @@ function ProjectCard({ name, images, description, date, icons }: ProjectCardProp
             <div className="absolute inset-0 bg-dkgreen -translate-x-3 translate-y-3 rounded-2xl"/>
 
             <div className="relative z-10 bg-ltgreen rounded-2xl p-6 border-dkgreen border-2">
-                <div className="flex gap-6 items-stretch">
+                <div className="flex flex-col md:flex-row gap-6 items-stretch">
 
-                    <div className="flex-1 flex flex-col self-stretch">
+                    <div className="flex-1 min-w-0 flex flex-col self-stretch">
                         <div className="flex justify-between mb-4">
                             <h3 className="font-semibold text-xl font-fraunces">{name}</h3>
                         </div>
@@ -33,7 +33,7 @@ function ProjectCard({ name, images, description, date, icons }: ProjectCardProp
                             ))}
                         </ul>
 
-                        <div className="mt-auto flex gap-4 text-5xl p-5 ">
+                        <div className="mt-auto flex gap-2 md:gap-4 text-5xl p-5 ">
                             {icons.map((icon, index) => (
                                 <span key={index} className="transition transform hover:scale-110">{icon}</span>
                             ))}
@@ -41,9 +41,9 @@ function ProjectCard({ name, images, description, date, icons }: ProjectCardProp
 
                     </div>
 
-                    <div className="flex flex-col text-right">
+                    <div className="flex flex-col md:text-right w-full md:w-80 lg:w-128 shrink-0">
                         <span className="text-sm font-fraunces italic">{date}</span>
-                        <div className="w-lg shrink-0">
+                        <div className="w-full min-w-0 overflow-hidden">
                             <ImageCarousel images={images}/>
                         </div>
                     </div>

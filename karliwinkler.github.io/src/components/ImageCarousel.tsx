@@ -24,9 +24,7 @@ export function ImageCarousel({ images, className }: ImageCarouselProps) {
 
     return (
         <div className={`relative ${className ?? ""}`}>
-            {/* Image box (controls sizing) */}
             <div className="overflow-hidden ">
-                {/* Use aspect ratio so all cards are consistent */}
                 <img
                     src={images[safeIndex].src}
                     alt={images[safeIndex].alt ?? "Project screenshot"}
@@ -41,7 +39,7 @@ export function ImageCarousel({ images, className }: ImageCarouselProps) {
                     <button
                         type="button"
                         onClick={prev}
-                        className="absolute -left-3 top-1/2 -translate-y-1/2 px-2 py-1 text-3xl hover:font-extrabold"
+                        className="absolute left-4 top-1/2 -translate-y-1/2 px-2 py-1 text-3xl hover:font-extrabold"
                         aria-label="Previous image"
                     >
                         ‹
@@ -49,7 +47,7 @@ export function ImageCarousel({ images, className }: ImageCarouselProps) {
                     <button
                         type="button"
                         onClick={next}
-                        className="absolute -right-3 top-1/2 -translate-y-1/2 px-2 py-1 text-3xl hover:font-extrabold"
+                        className="absolute right-4 top-1/2 -translate-y-1/2 px-2 py-1 text-3xl hover:font-extrabold"
                         aria-label="Next image"
                     >
                         ›

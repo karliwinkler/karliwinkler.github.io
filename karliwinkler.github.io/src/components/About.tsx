@@ -3,7 +3,7 @@ import flower4Url from "../assets/Flower-4.svg";
 
 function About() {
     return (
-        <section className="w-screen min-h-screen bg-burgundy py-24" id="about">
+        <section className="w-full min-h-screen bg-burgundy py-24" id="about">
             <Container>
                 <div className="relative pt-12 flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
 
@@ -30,30 +30,30 @@ function About() {
                     <img
                         src={flower4Url}
                         alt=""
-                        className="absolute -bottom-30 -left-28 w-40 z-0"
+                        className="absolute w-20 -bottom-20 right-5 md:-bottom-30 md:-left-28 md:w-40 z-0"
                     />
 
                     {/* Right: photo trio */}
-                    <div className="pt-5 md:flex-1 md:flex md:justify-end md:items-start translate-x-20">
+                    <div className="pt-5 md:flex-1 md:flex md:justify-end md:items-start md:translate-x-20">
                         <div className="relative flex items-center gap-2">
                             {/* Left photo */}
-                            <div className="-rotate-6 z-20 translate-y-25">
+                            <div className="-rotate-6 z-20 md:translate-y-25 translate-y-15">
                                 <div className="bg-white p-2 shadow-lg">
                                     <img
                                         src="images/ski-2.JPG"
                                         alt="About photo 1"
-                                        className="block max-w-[210px] h-auto"
+                                        className="block md:max-w-[210px] max-w-[105px] h-auto"
                                     />
                                 </div>
                             </div>
 
                             {/* Middle photo (on top, overlapping) */}
-                            <div className="relative z-10 -mx-20">
+                            <div className="relative z-10 md:-mx-20 -mx-10">
                                 <div className="bg-white p-2 shadow-xl">
                                     <img
                                         src="images/hiking-2.jpeg"
                                         alt="About photo 2"
-                                        className="block max-w-[280px] h-auto"
+                                        className="block md:max-w-[280px] max-w-[140px] h-auto"
                                     />
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ function About() {
                                     <img
                                         src="images/cannonbeach-2.jpeg"
                                         alt="About photo 3"
-                                        className="block max-w-[220px] h-auto"
+                                        className="block md:max-w-[220px] max-w-[110px] h-auto"
                                     />
                                 </div>
                             </div>

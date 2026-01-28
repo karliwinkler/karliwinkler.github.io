@@ -19,7 +19,7 @@ function Projects() {
                         <img
                             src={flower2Url}
                             alt=""
-                            className="absolute -bottom-50 -left-40 w-72 z-0"
+                            className="absolute w-40 -bottom-40 -left-20 md:-bottom-50 md:-left-40 md:w-72 z-0"
                         />
 
                         <ProjectCard
@@ -73,7 +73,7 @@ function Projects() {
                         <img
                             src={flower3Url}
                             alt=""
-                            className="absolute -top-15 -right-35 w-56 z-0"
+                            className="absolute w-30 -top-10 -right-5 md:-top-15 md:-right-35 md:w-56 z-0"
                         />
 
                         <ProjectCard
