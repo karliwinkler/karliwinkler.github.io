@@ -3,9 +3,9 @@ import flower4Url from "../assets/Flower-4.svg";
 
 function About() {
     return (
-        <section className="w-full min-h-screen bg-burgundy py-24" id="about">
+        <section className="w-full min-h-screen bg-burgundy py-24 overflow-hidden" id="about">
             <Container>
-                <div className="relative pt-12 flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+                <div className="relative h-full pt-8 flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
 
                     <div className="max-w-lg text-sm text-ltpink leading-relaxed">
                         <h2 className="text-5xl font-semibold mb-6 font-fraunces">About me</h2>
@@ -15,10 +15,9 @@ function About() {
                         </p>
                         <br/>
                         <p>
-                            I'm currently working as a Junior Solutions Consultant Co-op at Trulioo, supporting both
-                            technical and non-technical teams with the delivery of SaaS verification solutions.
-                            Previously, I taught programming and Web Development as a Coding Tutor
-                            and worked with a UBC professor to build an educational game website.
+                            I'm currently working as a Software Engineer Intern at Korotu Technology on their DroneWatch web platform.
+                            Some of my past experience includes supporting the delivery of SaaS verification solutions as a Solutions Consultant Co-op at Trulioo, developing an educational game website for a UBC professor,
+                            and teaching programming and Web Development as a Coding Tutor.
                         </p>
                         <br/>
                         <p>
@@ -31,6 +30,7 @@ function About() {
                         src={flower4Url}
                         alt=""
                         className="absolute w-20 -bottom-20 right-5 md:-bottom-30 md:-left-28 md:w-40 z-0"
+                        style={{ animation: 'spin 30s linear infinite' }}
                     />
 
                     {/* Right: photo trio */}
