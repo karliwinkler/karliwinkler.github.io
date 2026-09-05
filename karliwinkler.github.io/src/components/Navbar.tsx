@@ -3,8 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 function Navbar() {
     return (
         <nav className="fixed top-0 z-50 w-full py-5 bg-ltpink text-burgundy font-fraunces">
-            <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
-
+            <div className="mx-auto px-6 flex items-center justify-between">
                 <div className="flex items-center gap-6">
                     <a
                         href="https://github.com/karliwinkler"

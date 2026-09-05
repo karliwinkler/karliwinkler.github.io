@@ -7,15 +7,15 @@ import SkillsDivider from "./components/SkillsDivider.tsx";
 
 export default function App() {
     return (
-        <>
-            <Navbar />
-            <Hero />
-            <Projects />
-            <SkillsDivider />
-            <About />
-        </>
+        <div className="min-h-screen w-full overflow-hidden bg-ltpink">
+            <Navbar/>
+            <Hero/>
+            <Projects/>
+            <SkillsDivider/>
+            <About/>
+        </div>
 
-    );
-}
+        );
+    }
 
 

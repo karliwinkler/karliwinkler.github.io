@@ -10,7 +10,7 @@ import flower3Url from "../assets/Flower-3.svg";
 
 function Projects() {
     return (
-        <section className="bg-ltpink py-24" id="projects">
+        <section className="py-24" id="projects">
             <Container>
                 <h2 className="text-4xl font-semibold mb-8 font-fraunces">Projects</h2>
 
