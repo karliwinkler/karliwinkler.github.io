@@ -3,11 +3,11 @@ import flower4Url from "../assets/Flower-4.svg";
 
 function About() {
     return (
-            <section className="bg-burgundy py-24 pb-32" id="about">
+            <section className="bg-burgundy py-24 pb-36" id="about">
                 <Container>
                     <div className="relative h-full pt-4 flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
 
-                        <div className="max-w-lg text-sm text-ltpink leading-relaxed">
+                        <div className="max-w-lg text-sm text-ltpink leading-relaxed flex-shrink-0">
                             <h2 className="text-5xl font-semibold mb-6 font-fraunces">About me</h2>
                             <p>
                                 Hi! I'm a computer science student from North Vancouver, BC,
@@ -29,12 +29,12 @@ function About() {
                         <img
                             src={flower4Url}
                             alt=""
-                            className="absolute w-20 -bottom-20 right-5 md:-bottom-30 md:-left-28 md:w-40 z-0"
+                            className="absolute w-24 -bottom-28 right-5 md:-bottom-30 md:-left-28 md:w-40 z-0"
                             style={{ animation: 'spin 30s linear infinite' }}
                         />
 
                         {/* Right: photo trio */}
-                        <div className="pt-5 md:flex-1 md:flex md:justify-end md:items-start md:translate-x-20">
+                        <div className="pt-5 md:flex-1 md:flex md:justify-end md:items-start md:translate-x-10">
                             <div className="relative flex items-center gap-2">
                                 {/* Left photo */}
                                 <div className="-rotate-6 z-20 md:translate-y-25 translate-y-15">

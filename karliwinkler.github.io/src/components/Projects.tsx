@@ -20,6 +20,7 @@ function Projects() {
                             src={flower2Url}
                             alt=""
                             className="absolute w-40 -bottom-40 -left-20 md:-bottom-50 md:-left-40 md:w-72 z-0"
+                            style={{ animation: 'spin 30s linear infinite reverse' }}
                         />
 
                         <ProjectCard
@@ -74,6 +75,7 @@ function Projects() {
                             src={flower3Url}
                             alt=""
                             className="absolute w-30 -top-10 -right-5 md:-top-15 md:-right-35 md:w-56 z-0"
+                            style={{ animation: 'spin 30s linear infinite' }}
                         />
 
                         <ProjectCard

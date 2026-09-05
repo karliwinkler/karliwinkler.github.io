@@ -18,7 +18,8 @@ function Hero() {
                     <div className="relative inline-block">
                         <img src={flowerUrl}
                              alt=""
-                             className="absolute -bottom-15 -right-18 w-48 md:-bottom-20 md:-right-25 md:w-64 z-0"
+                             className="absolute -bottom-15 -right-18 w-48 md:-bottom-20 md:-right-25 md:w-64 z-0 "
+                             style={{ animation: 'spin 30s linear infinite' }}
                         />
                         <div className="h-56 w-56 md:h-64 md:w-64 rounded-full overflow-hidden">
                             <img src="images/IMG_0070.JPG"
