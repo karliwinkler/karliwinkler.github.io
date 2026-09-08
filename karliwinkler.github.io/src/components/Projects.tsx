@@ -6,14 +6,16 @@ import {RiTailwindCssFill} from "react-icons/ri";
 import {GrOracle} from "react-icons/gr";
 import flower2Url from "../assets/Flower-2.svg";
 import flower3Url from "../assets/Flower-3.svg";
+import Reveal from "./Reveal.tsx";
 
 
 function Projects() {
     return (
         <section className="py-24" id="projects">
             <Container>
-                <h2 className="text-4xl font-semibold mb-8 font-fraunces">Projects</h2>
-
+                <Reveal>
+                    <h2 className="text-4xl font-semibold mb-8 font-fraunces">Projects</h2>
+                </Reveal>
                 <div className="space-y-12">
                     <div className="relative">
                         <img
@@ -23,52 +25,55 @@ function Projects() {
                             style={{ animation: 'spin 30s linear infinite reverse' }}
                         />
 
+                        <Reveal duration={700} delay={200}>
+                            <ProjectCard
+                                name="InsightUBC"
+                                date="Jan – Mar 2025"
+                                images={[
+                                    {src: "images/insightubc-1.png", alt: "InsightUBC dashboard"},
+                                    {src: "images/insightubc-2.png", alt: "InsightUBC dashboard"},
+                                    {src: "images/insightubc-3.png", alt: "InsightUBC dashboard"},
+                                    {src: "images/insightubc-4.png", alt: "InsightUBC dashboard"}
+                                ]}
+                                description={[
+                                    "A full-stack web application for searching and viewing data insights on UBC courses",
+                                    "Upload a course dataset and filter search by department and course",
+                                    "View insights like Grade Average By Year, Pass vs. Fail Rate, and Top Courses by Grade Average",
+                                    "Datasets are saved so you can revisit insights in a new session",
+                                    "Tech stack: TypeScript, Node.js, React, TailwindCSS"
+                                ]}
+                                icons={[
+                                    <SiTypescript/>,
+                                    <FaNode/>,
+                                    <FaReact/>,
+                                    <RiTailwindCssFill/>
+                                ]}
+                            />
+                        </Reveal>
+                    </div>
+                    <Reveal duration={700} delay={400}>
                         <ProjectCard
-                            name="InsightUBC"
-                            date="Jan – Mar 2025"
+                            name="Sizzlin' Spoons Meal Planner"
+                            date="Mar 2025"
                             images={[
-                                {src: "images/insightubc-1.png", alt: "InsightUBC dashboard"},
-                                {src: "images/insightubc-2.png", alt: "InsightUBC dashboard"},
-                                {src: "images/insightubc-3.png", alt: "InsightUBC dashboard"},
-                                {src: "images/insightubc-4.png", alt: "InsightUBC dashboard"}
+                                {src: "images/sizzlinspoons-1.png", alt: "Sizzlin Spoons home"},
+                                {src: "images/sizzlinspoons-2.png", alt: "Sizzlin Spoons options"},
+                                {src: "images/sizzlinspoons-3.png", alt: "Sizzlin Spoons recipes"}
                             ]}
                             description={[
-                                "A full-stack web application for searching and viewing data insights on UBC courses",
-                                "Upload a course dataset and filter search by department and course",
-                                "View insights like Grade Average By Year, Pass vs. Fail Rate, and Top Courses by Grade Average",
-                                "Datasets are saved so you can revisit insights in a new session",
-                                "Tech stack: TypeScript, Node.js, React, TailwindCSS"
+                                "A meal prep planner and nutrition tracker built during a 24-hour hackathon that allows users to search recipes by cuisine, ingredient, and food category",
+                                "Select your favourite recipes and Sizzlin' Spoons automatically organizes them in a weekly meal plan with daily nutritional breakdowns",
+                                "Tech stack: Python, Flask, HTML/CSS"
+
                             ]}
                             icons={[
-                                <SiTypescript/>,
-                                <FaNode/>,
-                                <FaReact/>,
-                                <RiTailwindCssFill/>
+                                <FaPython/>,
+                                <SiFlask/>,
+                                <FaHtml5/>,
+                                <FaCss3Alt/>
                             ]}
                         />
-                    </div>
-
-                    <ProjectCard
-                        name="Sizzlin' Spoons Meal Planner"
-                        date="Mar 2025"
-                        images={[
-                            {src: "images/sizzlinspoons-1.png", alt: "Sizzlin Spoons home"},
-                            {src: "images/sizzlinspoons-2.png", alt: "Sizzlin Spoons options"},
-                            {src: "images/sizzlinspoons-3.png", alt: "Sizzlin Spoons recipes"}
-                        ]}
-                        description={[
-                            "A meal prep planner and nutrition tracker built during a 24-hour hackathon that allows users to search recipes by cuisine, ingredient, and food category",
-                            "Select your favourite recipes and Sizzlin' Spoons automatically organizes them in a weekly meal plan with daily nutritional breakdowns",
-                            "Tech stack: Python, Flask, HTML/CSS"
-
-                        ]}
-                        icons={[
-                            <FaPython/>,
-                            <SiFlask/>,
-                            <FaHtml5/>,
-                            <FaCss3Alt/>
-                        ]}
-                    />
+                    </Reveal>
 
                     <div className="relative">
                         <img
@@ -78,29 +83,31 @@ function Projects() {
                             style={{ animation: 'spin 30s linear infinite' }}
                         />
 
-                        <ProjectCard
-                            name="Linguistics Database and Research Tool"
-                            date="Jan - Mar 2025"
-                            images={[
-                                {src: "images/database-1.png", alt: "Database dashboard"},
-                                {src: "images/database-2.png", alt: "Database dashboard"},
-                                {src: "images/database-3.png", alt: "Database dashboard"},
-                                {src: "images/database-4.png", alt: "Database dashboard"}
-                            ]}
-                            description={[
-                                "A tool for linguistics field research to store and access data on languages, dialects, and speakers encountered in the field",
-                                "Backed by a relational database, users can insert, update, and delete data on languages and speakers",
-                                "View generated insights like Ancient Languages and Countries With the Highest Number of Speakers for each language",
-                                "Tech stack: JavaScript, MySQL, Oracle, HTML/CSS"
-                            ]}
-                            icons={[
-                                <SiJavascript/>,
-                                <SiMysql/>,
-                                <GrOracle/>,
-                                <FaHtml5/>,
-                                <FaCss3Alt/>
-                            ]}
-                        />
+                        <Reveal duration={700} delay={600}>
+                            <ProjectCard
+                                name="Linguistics Database and Research Tool"
+                                date="Jan - Mar 2025"
+                                images={[
+                                    {src: "images/database-1.png", alt: "Database dashboard"},
+                                    {src: "images/database-2.png", alt: "Database dashboard"},
+                                    {src: "images/database-3.png", alt: "Database dashboard"},
+                                    {src: "images/database-4.png", alt: "Database dashboard"}
+                                ]}
+                                description={[
+                                    "A tool for linguistics field research to store and access data on languages, dialects, and speakers encountered in the field",
+                                    "Backed by a relational database, users can insert, update, and delete data on languages and speakers",
+                                    "View generated insights like Ancient Languages and Countries With the Highest Number of Speakers for each language",
+                                    "Tech stack: JavaScript, MySQL, Oracle, HTML/CSS"
+                                ]}
+                                icons={[
+                                    <SiJavascript/>,
+                                    <SiMysql/>,
+                                    <GrOracle/>,
+                                    <FaHtml5/>,
+                                    <FaCss3Alt/>
+                                ]}
+                            />
+                        </Reveal>
                     </div>
                 </div>
             </Container>

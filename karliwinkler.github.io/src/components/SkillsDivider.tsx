@@ -1,16 +1,15 @@
 const skills = [
+    "Python",
     "C/C++",
     "Java",
     "JavaScript",
     "TypeScript",
-    "SQL",
-    "Python",
-    "Node.js",
     "HTML/CSS",
+    "SQL",
+    "Node.js",
     "React",
     "TailwindCSS",
     "Git",
-    "Postman"
 ];
 
 function SkillsDivider() {

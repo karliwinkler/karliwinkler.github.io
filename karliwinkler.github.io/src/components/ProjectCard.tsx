@@ -18,9 +18,10 @@ function ProjectCard({ name, images, description, date, icons }: ProjectCardProp
     return (
         <div className="relative">
 
-            <div className="absolute inset-0 bg-dkgreen -translate-x-3 translate-y-3 rounded-2xl"/>
+            <div className="absolute inset-0 bg-dkgreen z-10 -translate-x-3 translate-y-3 rounded-2xl"/>
 
-            <div className="relative z-10 bg-ltgreen rounded-2xl p-6 border-dkgreen border-2">
+            <div className="relative z-20 bg-ltgreen rounded-2xl p-6 border-dkgreen border-2
+                hover:-translate-y-1 transition-all duration-300">
                 <div className="flex flex-col md:flex-row gap-6 items-stretch">
 
                     <div className="flex-1 min-w-0 flex flex-col self-stretch">
