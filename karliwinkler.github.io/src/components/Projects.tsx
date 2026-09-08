@@ -25,7 +25,7 @@ function Projects() {
                             style={{ animation: 'spin 30s linear infinite reverse' }}
                         />
 
-                        <Reveal duration={700} delay={200}>
+                        <Reveal duration={700} delay={100}>
                             <ProjectCard
                                 name="InsightUBC"
                                 date="Jan – Mar 2025"
@@ -51,7 +51,7 @@ function Projects() {
                             />
                         </Reveal>
                     </div>
-                    <Reveal duration={700} delay={400}>
+                    <Reveal duration={700} delay={200}>
                         <ProjectCard
                             name="Sizzlin' Spoons Meal Planner"
                             date="Mar 2025"
@@ -83,7 +83,7 @@ function Projects() {
                             style={{ animation: 'spin 30s linear infinite' }}
                         />
 
-                        <Reveal duration={700} delay={600}>
+                        <Reveal duration={700} delay={300}>
                             <ProjectCard
                                 name="Linguistics Database and Research Tool"
                                 date="Jan - Mar 2025"

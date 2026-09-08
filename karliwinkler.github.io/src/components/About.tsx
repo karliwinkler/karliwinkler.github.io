@@ -46,9 +46,10 @@ function About() {
                                     <div className="-rotate-6 z-20 md:translate-y-25 translate-y-15">
                                         <div className="bg-white p-2 shadow-lg">
                                             <img
-                                                src="images/ski-2.JPG"
-                                                alt="About photo 1"
+                                                src="images/ski-2.webp"
+                                                alt="About photo 1: skiing with friends"
                                                 className="block md:max-w-[210px] max-w-[105px] h-auto"
+                                                loading="lazy"
                                             />
                                         </div>
                                     </div>
@@ -57,9 +58,10 @@ function About() {
                                     <div className="relative z-10 md:-mx-20 -mx-10">
                                         <div className="bg-white p-2 shadow-xl">
                                             <img
-                                                src="images/hiking-2.jpeg"
-                                                alt="About photo 2"
+                                                src="images/hiking-2.webp"
+                                                alt="About photo 2: Karli on a hike"
                                                 className="block md:max-w-[280px] max-w-[140px] h-auto"
+                                                loading="lazy"
                                             />
                                         </div>
                                     </div>
@@ -68,9 +70,10 @@ function About() {
                                     <div className="rotate-5 ">
                                         <div className="bg-white p-2 shadow-lg">
                                             <img
-                                                src="images/cannonbeach-2.jpeg"
-                                                alt="About photo 3"
+                                                src="images/cannonbeach-2.webp"
+                                                alt="About photo 3: Karli at Cannon Beach"
                                                 className="block md:max-w-[220px] max-w-[110px] h-auto"
+                                                loading="lazy"
                                             />
                                         </div>
                                     </div>

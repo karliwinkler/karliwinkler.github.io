@@ -1,16 +1,36 @@
 import Container from "./Container.tsx";
 import flowerUrl from "../assets/Flower-1.svg";
+import { useState, useEffect } from "react";
+
+export function useTypewriter(text: string, speed = 50) {
+    const [displayed, setDisplayed] = useState("");
+
+    useEffect(() => {
+        setDisplayed("");
+        let i = 0;
+        const interval = setInterval(() => {
+            i++;
+            setDisplayed(text.slice(0, i));
+            if (i >= text.length) clearInterval(interval);
+        }, speed);
+        return () => clearInterval(interval);
+    }, [text, speed]);
+
+    return displayed;
+}
 
 function Hero() {
+    const title = useTypewriter("Hi, I'm Karli Winkler", 60);
     return (
-        <section className="w-full min-h-screen bg-ltpink flex items-center">
+        <section className="w-full min-h-screen bg-ltpink flex items-center" id="hero">
             <Container>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-8">
                     <div className="max-w-lg text-left">
                         <h1 className="text-4xl md:text-5xl font-semibold mb-4 font-fraunces">
-                            Hi, I’m Karli Winkler
+                            {title}
+                            <span className="animate-blink font-epilogue font-light">|</span> {/* blinking cursor */}
                         </h1>
-                        <p> I'm a third year Computer Science student at UBC interested in web and full-stack
+                        <p> I'm a fourth year Computer Science student at UBC interested in web and full-stack
                             development. Scroll to see some of my projects!
                         </p>
                     </div>
